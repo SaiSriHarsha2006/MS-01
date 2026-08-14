@@ -1,0 +1,10 @@
+from sklearn.linear_model import LinearRegression
+X=[[10],[20],[30],[40]]
+y=[100,120,140,160]
+model=LinearRegression()
+model.fit(X,y)
+pre=model.predict([[50]])
+print(pre)
+
+print(model.coef_)
+print(model.intercept_)
